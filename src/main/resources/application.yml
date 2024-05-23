@@ -7,8 +7,8 @@ java:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: ${jdbc:mysql://localhost:3306/mowPracticeDB}
-    username: root
+    url: jdbc:mysql://localhost:3306/basic # db 이름을 작성하신대로 바꿔주세요
+    username: root # username과 password를 설정하신 대로 변경하세요
   jpa:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
