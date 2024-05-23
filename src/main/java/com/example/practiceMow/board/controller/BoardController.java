@@ -16,7 +16,7 @@ public class BoardController {
     private final BoardService boardService;
 
     @GetMapping("")
-    public BoardDto getBoard(@RequestParam(name = "boardId")
+    public BoardDto getBoard(@RequestParam(name = "boardId", required = false)
                              String boardId) {
         return boardService.getBoard(boardId);
     }
